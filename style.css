@@ -1,0 +1,107 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* mmmmmmmmmmmm 
+navbar customize 
+mmmmmmmmmmmmmmmmmmm*/
+nav {
+  height: 8vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.3s;
+}
+/* bg color-change on nav mmmmmmmmmmmmmmm*/
+.change {
+  backdrop-filter: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/*mmmmmmmmmmm logo mmmmmmmmmmmmmmmmm*/
+.logo span {
+  font-size: 25px;
+}
+
+/*mmmmmmmmmmmmmmmm list style mmmmmmmmmmm*/
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*mmmmmmmmmmmmmm links style mmmmmmmmmmmmmmmmm*/
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  flex-direction: row;
+}
+
+/*mmmmmmmmmmmmmmmmmm burger styling  and burger hiddenmmmmmmmmmmmmmmmmmmm*/
+.burger span i {
+  font-size: 25px;
+  visibility: hidden;
+}
+
+.burgar span {
+  font-size: 25px;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .links {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/*mmmmmmmmmmmmmmm media screen for mobile  mmmmmmmmmmmmmmmmm*/
+@media screen and (max-width: 768px) {
+  .logo {
+    letter-spacing: 1px;
+  }
+  body {
+    position: relative;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  .links {
+    position: absolute;
+    top: 8vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    text-align: center;
+    height: 92vh;
+    width: 100%;
+    right: 0px;
+    transition: all 0.3s;
+    transform: translateX(100%);
+  }
+  .sign {
+    display: none;
+  }
+  .burger span i {
+    font-size: 25px;
+    visibility: visible;
+  }
+
+  /*mmmmmmmmmmmmmmmm animation for the burger mmmmmmmmmmmmmmmmmm*/
+  .picker {
+    transform: translateX(0%);
+  }
+}
