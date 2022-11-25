@@ -6,5 +6,5 @@ burger.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   var nav = document.querySelector("nav");
-  nav.classList.toggle("change", screenY > 0);
+  nav.classList.toggle("change", scrollY > 0);
 });

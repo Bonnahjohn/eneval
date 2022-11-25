@@ -16,19 +16,24 @@ nav {
   align-items: center;
   transition: 0.3s;
   position: fixed;
-  position: relative;
+  position: fixed;
   width: 100%;
+  z-index: 9999;
+  transition: all 0.3s;
 }
+
 /* bg color-change on nav mmmmmmmmmmmmmmm*/
-.change {
-  backdrop-filter: 5px;
+nav.change {
   background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
 }
 /*mmmmmmmmmmm logo mmmmmmmmmmmmmmmmm*/
 .logo span {
   font-size: 25px;
 }
-
+.change .logo {
+  color: white;
+}
 /*mmmmmmmmmmmmmmmm list style mmmmmmmmmmm*/
 ul li {
   list-style: none;
@@ -37,7 +42,9 @@ a {
   text-decoration: none;
   color: black;
 }
-
+.change ul li a {
+  color: whitesmoke;
+}
 /*mmmmmmmmmmmmmm links style mmmmmmmmmmmmmmmmm*/
 .links {
   display: flex;
@@ -51,7 +58,9 @@ a {
   font-size: 25px;
   visibility: hidden;
 }
-
+.change .burger {
+  color: whitesmoke;
+}
 .burgar span {
   font-size: 25px;
   visibility: hidden;
@@ -61,6 +70,10 @@ footer section {
 }
 hr {
   color: white;
+}
+/* main body */
+.pt {
+  padding-top: 5%;
 }
 @media screen and (max-width: 1024px) {
   .links {
@@ -77,6 +90,9 @@ hr {
   }
   body {
     position: relative;
+  }
+  nav .change {
+    background-color: whitesmoke !important;
   }
   nav {
     display: flex;
