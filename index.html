@@ -19,9 +19,9 @@
         <li>
           <a href="#home" aria-current="page" class="text-warning">Home</a>
         </li>
-        <li><a href="#">Our Programs</a></li>
+        <li><a href="#programs">Our Programs</a></li>
         <li><a href="#partner">Our Partners</a></li>
-        <li><a href="#">Testimonials</a></li>
+        <li><a href="#test">Testimonials</a></li>
       </ul>
       <form class="sign ms-5">
         <a
@@ -96,9 +96,74 @@
           </div>
         </div>
       </section>
+
+      <!--mmmmmmmmmmmmmmmmm programs section mmmmmmmmmmmmmmmm -->
+      <div id="programs" class="px-lg-4 container pb-5">
+        <section class="px-lg-5 px-2 mx-lg-5 mx-0 pt-5">
+          <div class="d-flex justify-content-between flex-lg-row flex-column">
+            <div class="col-lg-">
+              <h2 class="display-6 fw-bold">Our Programs</h2>
+            </div>
+            <div class="col-lg-">
+              <p class="d-lg-block d-none text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Minus, eaque saepe? Reiciendis exercitationem <br />
+                beatae perspiciatis veniam <br />
+              </p>
+              <!-- mobile screen only mmmmmmmmm -->
+              <p class="d-lg-none d-block text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                eaque saepe? Reiciendis exercitationem beatae perspiciatis
+                veniam
+              </p>
+            </div>
+          </div>
+          <!--mmmmmmmmmmmmmmmmm image and texts mmmmmmmmmmmmmmmmmmm -->
+          <div class="row">
+            <div class="pt-3 col-lg-7">
+              <img
+                src="assets/pro-img.jpg"
+                alt=""
+                class="h-100 d-lg-block d-none"
+                style="max-width: 550px"
+              />
+              <!-- mobile screen -->
+              <img
+                src="assets/pro-img.jpg"
+                alt=""
+                class="h-100 d-lg-none d-block w-100"
+              />
+            </div>
+            <div class="pt-5 col-lg-5">
+              <div class="row">
+                <!-- 1 button mmmmmmmmmm-->
+                <div class="col-lg-12">
+                  <button class="btn btn-light text-start w-100 fw-bold">
+                    Intense online coaching from <br />
+                    University alumny
+                  </button>
+                </div>
+                <!-- 2 button mmmmmmmmmm-->
+                <div class="col-lg-12 pt-4">
+                  <button class="btn btn-warning text-start w-100 text-light">
+                    Intense online language<br />
+                    preparation
+                  </button>
+                </div>
+                <!-- 3 button mmmmmmmmmm-->
+                <div class="col-lg-12 pt-4">
+                  <button class="btn btn-light text-start w-100 fw-bold py-3">
+                    Scholarship hunter coaching
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
       <!--mmmmmmmmmmmmmmmmm partners section mmmmmmmmmmmmmmmm -->
-      <div id="partner" class="px-lg-4 container pb-5">
-        <section class="px-lg-5 px-2 mx-lg-5 mx-0">
+      <div id="partner" class="px-lg-4 container pb-5 pt-5">
+        <section class="px-lg-5 px-2 mx-lg-5 mx-0 pt-5">
           <h2 class="fw-bold display-6">
             University that <br />partner with us
           </h2>
@@ -141,7 +206,7 @@
                   partnering with us
                 </h4>
                 <p
-                  class="position-absolute text-light fs-5 translate-middle-y top-100 pb-5 ps-3"
+                  class="position-absolute text-light fs-5 translate-middle-y top-100 pb-5 ps-3 d-lg-block d-none"
                   style="bottom: -32%"
                 >
                   Our partnership with Universities and <br />
@@ -152,9 +217,74 @@
           </div>
         </section>
       </div>
+      <!--mmmmmmmmmmmmm Testimonials mmmmmmmmmmmmmm-->
+      <div id="test">
+        <section
+          class="container px-lg-5 px-2"
+          style="
+            background-color: whitesmoke;
+            border-radius: 20px;
+            max-width: 1080px;
+          "
+        >
+          <div class="d-flex mySlides fades">
+            <div class="pt-5">
+              <h5 class="text-danger fs-2">
+                Uppsala <br />
+                University
+              </h5>
+              <div class="position-relative pt-4 ps-5">
+                <span
+                  class="text-danger position-absolute translate-middle-y start-0"
+                >
+                  <i class="fas fa-quote-left"></i
+                ></span>
+                <p class="ps-1 d-lg-block d-none">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing.
+                  <br />
+                  Excepturi iste molestiae amet quidem magnam
+                  <br />tionem quibusdam labore ipsum ipsa consectetur<br />aliquam
+                  minus doloribus temporibus<br />
+                  quasi quod voluptatum explicabo aut quia, ut eius.
+                  <span class="text-light">Nam quam ip</span>
+                  <br />consectetur
+                </p>
+                <!-- small screen -->
+                <p class="ps-1 d-lg-none d-block text-wrap">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing. Excepturi
+                  iste molestiae amet quidem magnam quibusdam labore ipsum ipsa
+                  consecteturaliquam minus doloribus temporibus quasi quod
+                  voluptatum explicabo aut quia, ut eius.
+                  <!-- <span class="text-light">Nam quam ip</span> -->
+                  consectetur
+                </p>
+              </div>
+              <div class="pt-3">
+                <h6>Crelisa Creista</h6>
+                <p>one of the delectuexercita</p>
+              </div>
+            </div>
+            <div class="col-lg-5 d-lg-block d-none">
+              <img
+                src="assets/test-img.jpg"
+                alt=""
+                style="width: 127%; height: 100%"
+                class="ps-5 tp-img"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- the dots/circle -->
+        <div style="text-align: center" class="pt-4">
+          <span class="dot act"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
       <!--mmmmmmmmmmmmmmmmm join us mmmmmmmmmmmmmmm-->
       <section
-        class="container px-lg-5 px-2 py-5"
+        class="container px-lg-5 px-2 py-5 mt-5"
         style="background-color: black; border-radius: 20px; max-width: 1080px"
       >
         <div class="container py-lg-0 py-5">
